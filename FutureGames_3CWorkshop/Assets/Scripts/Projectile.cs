@@ -9,14 +9,14 @@ public class Projectile : MonoBehaviour
     [SerializeField] private GameObject damageIndicatorPrefab;
     private bool isActive;
 
-    public void Initialize(Vector3 direction)
+    public void Initialize(float force)
     {
         isActive = true;
 
         // -------- This method is for projectiles that have a parabole. ----------
         // We add a force only once, not every frame
         // Make sure to have "useGravity" toggled on in the rigid body
-        projectileBody.AddForce(direction);
+        projectileBody.AddForce(transform.right * force, ForceMode.Impulse);
     }
 
     void Update()

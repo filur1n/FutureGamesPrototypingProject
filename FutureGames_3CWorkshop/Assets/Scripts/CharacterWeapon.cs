@@ -7,7 +7,10 @@ public class CharacterWeapon : MonoBehaviour
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private Transform shootingStartPosition;
     [SerializeField] private Transform shootingFrom;
-    private Vector3 force;
+    public  float force;
+    public float fireDelay;
+
+    private float lastTimeShot = 0;
 
     private void Update()
     {
@@ -22,10 +25,14 @@ public class CharacterWeapon : MonoBehaviour
     }
        void Shoot()
         {
-
-            GameObject newProjectile = Instantiate(projectilePrefab);
-            newProjectile.transform.position = shootingStartPosition.position;
-            newProjectile.GetComponent<Projectile>().Initialize(force);
+                 if (lastTimeShot + fireDelay < Time.time)
+         {
+            lastTimeShot = Time.time;
+                GameObject newProjectile = Instantiate(projectilePrefab);
+                newProjectile.transform.position = shootingStartPosition.position;
+            newProjectile.transform.rotation = shootingStartPosition.transform.rotation;
+                newProjectile.GetComponent<Projectile>().Initialize(force);
+         }
         }
    
 }

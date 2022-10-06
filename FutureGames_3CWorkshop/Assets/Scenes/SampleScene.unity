@@ -478,6 +478,8 @@ MonoBehaviour:
   projectilePrefab: {fileID: 5290313241035216749, guid: d932f0f253102c34daf0cd6a4f2cc6c5, type: 3}
   shootingStartPosition: {fileID: 1746475194}
   shootingFrom: {fileID: 843815329}
+  force: 5
+  fireDelay: 0.2
 --- !u!114 &493070762
 MonoBehaviour:
   m_ObjectHideFlags: 0
