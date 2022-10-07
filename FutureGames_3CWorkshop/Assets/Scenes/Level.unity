@@ -13253,7 +13253,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.44603518, y: -0, z: -0, w: 0.8950155}
-  m_LocalPosition: {x: -5.147, y: 12.94, z: -4.3}
+  m_LocalPosition: {x: -5.147, y: 13.76, z: -7.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32912,7 +32912,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2737791784416854541, guid: 86f1967622fbece4eabcd0652b325176, type: 3}
       propertyPath: decelerationDuration
-      value: 0.25
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2737791784416854541, guid: 86f1967622fbece4eabcd0652b325176, type: 3}
       propertyPath: decelerationCurve.m_Curve.Array.data[0].time
