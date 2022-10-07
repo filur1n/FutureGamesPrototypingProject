@@ -130,3 +130,4 @@ MonoBehaviour:
   speed: 5
   projectileBody: {fileID: 5353243506796285667}
   damageIndicatorPrefab: {fileID: 0}
+  damageToGive: 1

@@ -8,6 +8,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] private Rigidbody projectileBody;
     [SerializeField] private GameObject damageIndicatorPrefab;
     private bool isActive;
+    public int damageToGive;
 
     public void Initialize(float force)
     {
@@ -32,6 +33,15 @@ public class Projectile : MonoBehaviour
 
             // or this one (movement with the transform), both are ok
             //transform.Translate(transform.forward * speed * Time.deltaTime);
+        }
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.tag == "Enemy")
+        {
+            other.gameObject.GetComponent<EnemyHealth>().HurtEnemy(damageToGive);
+            Destroy(gameObject);
         }
     }
 
