@@ -7691,6 +7691,20 @@ MonoBehaviour:
   dashSpeed: 0.005
   dashTime: 0.25
   playerBody: {fileID: 843815329}
+--- !u!114 &493070767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493070748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1de8c63adeee4d8ea078f11655de1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 5
+  currentHealth: 0
 --- !u!43 &518720719
 Mesh:
   m_ObjectHideFlags: 0
@@ -15748,7 +15762,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26558
+  m_Name: pb_Mesh37900
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -21432,7 +21446,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26422
+  m_Name: pb_Mesh37764
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
