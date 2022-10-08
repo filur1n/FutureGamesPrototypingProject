@@ -28,7 +28,8 @@ public class EnemyCounter : MonoBehaviour
 
         if (enemies.Length <= 0)
         {
-            SceneManager.LoadScene("Level");
+            //SceneManager.LoadScene("Level");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
         
